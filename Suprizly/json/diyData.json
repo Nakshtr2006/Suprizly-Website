@@ -1,0 +1,8 @@
+{
+  "themes": [
+    { "name": "Adventure", "description": "Outdoor gear and exploration essentials", "price": 45 },
+    { "name": "Geek", "description": "Tech gadgets and geeky collectibles", "price": 50 },
+    { "name": "Chill", "description": "Relaxation and self-care items", "price": 40 },
+    { "name": "Custom", "description": "Mix and match from all categories", "price": 55 }
+  ]
+}

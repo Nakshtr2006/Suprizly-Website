@@ -1,0 +1,238 @@
+body {
+  margin: 0;
+  font-family: "Podkova", serif;
+  background: #fffdf5;
+  color: #333;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #f5d142;
+}
+.navbar .logo p {
+  font-size: 22px;
+  font-weight: bold;
+}
+.navlist {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+.navlist li {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.navlist li:hover {
+  color: #9500ff;
+}
+.unbox-btn {
+  background: #333;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.unbox-btn a{
+  color: whitesmoke;
+}
+
+
+.orders {
+  text-align: center;
+  padding: 40px 20px 20px;
+}
+.orders h1 {
+  margin-bottom: 10px;
+  background-color: white;
+  font-size: 55px;
+  font-family: 'Jersey 10', sans-serif;
+  color: #FF3791;
+}
+
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  padding: 20px 40px;
+}
+.card {
+  flex: 1 1 calc(33.333% - 25px);
+  display: flex;
+  align-items: flex-start;
+  background: #fff8c4;
+  border: 2px solid #f5d142;
+  border-radius: 12px;
+  padding: 20px;
+  gap: 20px;
+  min-width: 280px;
+  max-width: 360px;
+}
+.card:hover {
+ 
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+.card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+.details h3 {
+  margin: 0;
+}
+.details p {
+  margin: 6px 0;
+  font-size: 15px;
+}
+.details h6 {
+  margin: 4px 0;
+  color: #666;
+  font-size: 13px;
+}
+.details h4 {
+  margin: 10px 0;
+  font-size: 16px;
+}
+.details .old {
+  text-decoration: line-through;
+  color: #888;
+  margin-left: 5px;
+}
+
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+.actions input {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 70px;
+}
+.actions button {
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+.actions .save {
+  background: #4caf50;
+  color: white;
+}
+.actions .delete {
+  background: #e63946;
+  color: white;
+}
+
+
+.total-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 40px;
+  padding: 20px;
+  background: #fff8c4;
+  border: 2px solid #f5d142;
+  border-radius: 12px;
+
+}
+.total-box:hover {
+  box-shadow: 0 5px 12px rgba(0,0,0,0.12);
+}
+.total-item h3 {
+  margin: 0;
+}
+.total-price h2 {
+  margin: 0;
+  color: #222;
+}
+
+.join-club {
+    padding: 60px 20px;
+}
+
+.join-club h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.join-club h2 span {
+    color: #FF3FA4;
+}
+
+.join-club p {
+    font-size: 15px;
+    margin-bottom: 30px;
+    color: #555;
+    text-align: center;
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.subscribe-form input {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    width: 300px;
+}
+
+.subscribe-form button {
+    background: #FBBF24;
+    color: #333;
+    font-weight: 600;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+footer {
+  background: #333;
+  color: white;
+  padding: 30px 40px;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.footer-col h4 {
+  margin-bottom: 10px;
+}
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-col li {
+  margin: 5px 0;
+}
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.subscribe-form .msg,
+#messageArea {
+  width: 100%;
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suprizly - Home</title>
+  <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+  <%- include('partials/header') %>
+  <main>
+    <div class="icon box">
+      <h1>UNBOX THE UNEXPECTED</h1>
+      <p>Discover amazing mystery boxes filled with curated surprises for you</p>
+      <div class="buttons">
+        <div class="button1">
+          <p><a href="/boxes">Choose A Box</a></p>
+        </div>
+        <div class="button2">
+          <p><a href="/diy">Design Your Own</a></p>
+        </div>
+      </div>
+      <div class="features">
+        <ul>
+          <li>10,000+ Happy Customers</li>
+          <li>Free Shipping</li>
+          <li>30 Day Return</li>
+        </ul>
+      </div>
+    </div>
+    <div class="Adventure">
+      <h1>Choose Your Mystery Box</h1>
+      <p>Each box is carefully curated with premium items tailored to your interests and lifestyle</p>
+      <div class="explore box">
+        <div class="box1">
+          <h3>Adventure Box</h3>
+          <p>Outdoor gear, travel essentials, and exploration tools for the adventurous spirit.</p>
+          <h4>What's Inside:</h4>
+          <ul>
+            <li>Camping gear</li>
+            <li>Travel accessories</li>
+            <li>Outdoor snacks</li>
+            <li>Adventure guides</li>
+          </ul>
+          <a href="/boxes"><button>Explore Box</button></a>
+        </div>
+        <div class="box2">
+          <h3>Geek Box</h3>
+          <p>Tech gadgets, collectibles, and geeky goodies for the tech-savvy enthusiast.</p>
+          <h4>What's Inside:</h4>
+          <ul>
+            <li>Tech accessories</li>
+            <li>Collectible figures</li>
+            <li>Geeky apparel</li>
+            <li>Digital tools</li>
+          </ul>
+          <a href="/boxes"><button>Explore Box</button></a>
+        </div>
+        <div class="box3">
+          <h3>Chill Box</h3>
+          <p>Relaxation items, comfort goods, and self-care essentials for peaceful moments.</p>
+          <h4>What's Inside:</h4>
+          <ul>
+            <li>Aromatherapy</li>
+            <li>Cozy accessories</li>
+            <li>Comfort snacks</li>
+            <li>Relaxation tools</li>
+          </ul>
+          <a href="/boxes"><button>Explore Box</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="testemonials">
+      <h1>Happy Customers</h1>
+      <p>See what our community is saying about their Surprizly experience</p>
+      <div class="rev1">
+        <h3>Mitali Salhotra</h3>
+        <p>"The Adventure Box exceeded my expectations! Got amazing hiking gear and a portable coffee maker I use every day."</p>
+      </div>
+      <div class="rev1">
+        <h3>Rohan Mehta</h3>
+        <p>"Surprizly surprised me in the best way! Got a power bank and a journal, both of which I've been using nonstop."</p>
+      </div>
+      <div class="rev1">
+        <h3>Simran Kaur</h3>
+        <p>"Didn't expect to find so many useful things in one box! The Bluetooth speaker and travel organizer have been total game-changers."</p>
+      </div>
+    </div>
+    <div class="join-club">
+      <h2>Join the <span>Surprise Club</span></h2>
+      <p>Get exclusive access to limited boxes and special member discounts.</p>
+      <div class="subscribe-form">
+        <input type="email" id="emailInput" placeholder="Enter your email..." />
+        <button type="button" id="subscribeBtn">Subscribe</button>
+      </div>
+      <p class="msg" id="messageArea"></p>
+    </div>
+  </main>
+  <%- include('partials/footer') %>
+  <script src="/js/index.js"></script>
+</body>
+</html>

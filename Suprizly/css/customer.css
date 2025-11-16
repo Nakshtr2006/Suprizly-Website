@@ -1,0 +1,218 @@
+body {
+  margin: 0;
+  font-family: "Podkova", serif;
+  background: #fffdf5;
+  color: #333;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #f5d142;
+}
+.navbar .logo p {
+  font-size: 22px;
+  font-weight: bold;
+}
+.navlist {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+.navlist li {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.navlist li:hover {
+  color: #9500ff;
+}
+.unbox-btn {
+  background: #333;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.unbox-btn a{
+  color: whitesmoke;
+}
+
+
+.customer {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.customer h1 {
+    font-size: 55px;
+    font-family: 'Jersey 10', sans-serif;
+    color: #FF3791;
+}
+
+.customer h1 span {
+    color: #ffba08;
+}
+
+.customer p {
+    margin: 15px auto;
+    max-width: 600px;
+    color: #555;
+}
+
+.customer h3 {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background: #ffba08;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 8px;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 40px 20px;
+}
+
+.stats div {
+    background: #ffe97f;
+    padding: 20px 30px;
+    border-radius: 15px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.stats h3 {
+    font-size: 1.8rem;
+    color: #ff4081;
+}
+
+.stats h5 {
+    margin-top: 8px;
+    font-size: 1rem;
+    color: #333;
+}
+
+
+.reviews {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.reviews h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+
+.customers {
+    display: flex;
+    justify-content: space-evenly; 
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.customers div {
+    background: #ffe97f;
+    padding: 20px;
+    border-radius: 15px;
+    width: 300px;
+    min-height: 180px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+.customers p {
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.5;
+}
+
+.join-club {
+    padding: 60px 20px;
+}
+
+.join-club h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.join-club h2 span {
+    color: #FF3FA4;
+}
+
+.join-club p {
+    font-size: 15px;
+    margin-bottom: 30px;
+    color: #555;
+    text-align: center;
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.subscribe-form input {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    width: 300px;
+}
+
+.subscribe-form button {
+    background: #FBBF24;
+    color: #333;
+    font-weight: 600;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+footer {
+  background: #333;
+  color: white;
+  padding: 30px 40px;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.footer-col h4 {
+  margin-bottom: 10px;
+}
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-col li {
+  margin: 5px 0;
+}
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.subscribe-form .msg,
+#messageArea {
+  width: 100%;
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+}
