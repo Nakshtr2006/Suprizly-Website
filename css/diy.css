@@ -1,0 +1,232 @@
+body {
+  margin: 0;
+  font-family: "Podkova", serif;
+  background: #fffdf5;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #f5d142;
+}
+
+.navbar .logo p {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.navlist {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.navlist li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.navlist li a:hover,
+.navlist li a.active {
+  color: #9500ff;
+}
+
+.unbox-btn {
+  background: #333;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.unbox-btn a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+/* DIY Section */
+.diy-container {
+  max-width: 850px;
+  margin: 60px auto;
+  padding: 30px;
+  background: #f9f9f9;
+  border-radius: 14px;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.diy-container h1 {
+  font-family: 'Jersey 10', sans-serif;
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.steps {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.step-btn {
+  background: #ffe9b5;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.step-btn.active {
+  background: #ff0077;
+  color: white;
+}
+
+.step-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  min-height: 250px;
+}
+
+.card {
+  background-color: white;
+  border: 1.5px solid #f5d142;
+  border-radius: 12px;
+  width: 180px;
+  padding: 15px;
+  box-shadow: 0px 4px 8px rgba(255, 217, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h3 {
+  font-size: 16px;
+  margin: 8px 0 4px;
+  color: #ff0077;
+}
+
+.card p {
+  font-size: 13px;
+  color: #555;
+}
+
+.action-btn {
+  margin-top: 25px;
+}
+
+.action-btn button {
+  background: #ff0077;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+textarea {
+  width: 80%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+  margin-top: 10px;
+  resize: none;
+}
+
+footer {
+  background: #333;
+  color: white;
+  padding: 30px 40px;
+  margin-top: 40px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-col h4 {
+  margin-bottom: 10px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col li {
+  margin: 5px 0;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+
+.diy-container {
+  text-align: center;
+  padding: 2rem;
+  font-family: 'Podkova', serif;
+}
+
+.item-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.item-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  width: 220px;
+  border-radius: 10px;
+  background-color: #fff;
+  transition: 0.3s;
+}
+
+.item-card:hover {
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.selectBtn {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#noteInput {
+  width: 70%;
+  height: 120px;
+  border-radius: 10px;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+#confirmBtn {
+  background: #000;
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boxes - Suprizly</title>
+  <link rel="stylesheet" href="/css/boxes.css">
+</head>
+<body>
+  <%- include('partials/header') %>
+  <main>
+    <div class="mystrybox">
+      <h1>Mystery Boxes</h1>
+      <p>Discover our curated collection of mystery boxes, each filled with premium items tailored to your interests</p>
+    </div>
+    <div class="filter_boxes">
+      <div class="list_1">
+        <ul>
+          <h4>Categories :</h4>
+          <li class="filter-option active" data-category="all">All Boxes <sup>8</sup></li>
+          <li class="filter-option" data-category="adventure">Adventure <sup>2</sup></li>
+          <li class="filter-option" data-category="geek">Geek <sup>3</sup></li>
+          <li class="filter-option" data-category="chill">Chill <sup>3</sup></li>
+        </ul>
+      </div>
+      <div class="list2">
+        <ul>
+          <h4>All Prices</h4>
+          <li class="filter-option price-filter" data-price="all">All Prices</li>
+          <li class="filter-option price-filter" data-price="25-50">$25- $50 <sup>3</sup></li>
+          <li class="filter-option price-filter" data-price="50-100">$50- $100<sup>5</sup></li>
+        </ul>
+      </div>
+    </div>
+    <div class="active-filters" id="activeFilters">
+      <!-- Active filter cards will appear here -->
+    </div>
+    <div class="boxes">
+      <!-- Dynamic boxes from backend, if provided -->
+      <% if (typeof boxes !== 'undefined' && boxes && boxes.length) { %>
+        <% boxes.forEach(box => { %>
+          <div class="box1">
+            <h5><%= box.discount %>% OFF</h5>
+            <h3><%= box.name %></h3>
+            <p><%= box.desc %></p>
+            <h3>$<%= box.price %></h3>
+            <% if (box.features && box.features.length) { box.features.forEach(f => { %>
+              <h6><%= f %></h6>
+            <% }) } %>
+            <button>View Details</button>
+          </div>
+        <% }) %>
+      <% } %>
+      <!-- Always show static demo boxes for styling and fallback -->
+      <div class="box1">
+        <h5>26% OFF</h5>
+        <h3>Adventure <br>Box</h3>
+        <p>Premium outdoor gear for serious adventure</p>
+        <h3>$89</h3>
+        <h6>Waterproof items</h6>
+        <h6>Professional grade</h6>
+        <button>View Details</button>
+      </div>
+      <div class="box1">
+        <h5>26% OFF</h5>
+        <h3>Adventure <br>Box</h3>
+        <p>Perfect Introduction to Outdoor Adventure</p>
+        <h3>$45</h3>
+        <h6>Waterproof items</h6>
+        <h6>Professional grade</h6>
+        <button>View Details</button>
+      </div>
+      <div class="box1">
+        <h5>26% OFF</h5>
+        <h3>Geek Tech</h3>
+        <p>Latest Gadgets and Tech Accessories</p>
+        <h3>$75</h3>
+        <h6>Waterproof items</h6>
+        <h6>Professional grade</h6>
+        <button>View Details</button>
+      </div>
+      <div class="box1">
+        <h5>26% OFF</h5>
+        <h3>Geek Tech</h3>
+        <p>Nostalgic Tech and Retro Gaming Goodies</p>
+        <h3>$55</h3>
+        <h6>Waterproof items</h6>
+        <h6>Professional grade</h6>
+        <button>View Details</button>
+      </div>
+      <div class="box1">
+        <h5>24% OFF</h5>
+        <h3>Chill Spa</h3>
+        <p>Utimate Relaxation and Self-care Package</p>
+        <h3>$65</h3>
+        <h6>Natural ingredients</h6>
+        <h6>Stress relief</h6>
+        <button>View Details</button>
+      </div>
+      <div class="box1">
+        <h5>27% OFF</h5>
+        <h3>Chill Cosy</h3>
+        <p>Comfort Items to Feel Cosy</p>
+        <h3>$40</h3>
+        <h6>Waterproof items</h6>
+        <h6>Ultra comfortable</h6>
+        <button>Seasonal items</button>
+      </div>
+      <div class="box1">
+        <h5>26% OFF</h5>
+        <h3>Creative <br>Artist</h3>
+        <p>Art Supplies and Creative Inspiration</p>
+        <h3>$70</h3>
+        <h6>Inspiring content</h6>
+        <h6>Professional grade</h6>
+        <button>View Details</button>
+      </div>
+      <div class="box1">
+        <h5>29% OFF</h5>
+        <h3>Bookworm</h3>
+        <p>Premium outdoor gear for serious adventure</p>
+        <h3>$50</h3>
+        <h6>Carefully selected</h6>
+        <h6>Genre variety</h6>
+        <button>View Details</button>
+      </div>
+    </div>
+    <div class="add-box-section">
+      <h2>Add New Box</h2>
+      <form method="POST" action="/boxes/add" class="add-box-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Box Name</label>
+            <input type="text" id="name" name="name" placeholder="e.g., Adventure Box" required>
+          </div>
+          <div class="form-group">
+            <label for="price">Price ($)</label>
+            <input type="number" id="price" name="price" placeholder="e.g., 65" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="discount">Discount (%)</label>
+            <input type="number" id="discount" name="discount" placeholder="e.g., 25" min="0" max="100">
+          </div>
+          <div class="form-group">
+            <label for="desc">Description</label>
+            <input type="text" id="desc" name="desc" placeholder="Brief description of the box">
+          </div>
+        </div>
+        <div class="form-group full-width">
+          <label for="features">Features</label>
+          <input type="text" id="features" name="features" placeholder="Waterproof items, Professional grade, Ultra comfortable (comma separated)">
+        </div>
+        <div class="form-group full-width">
+          <label for="photo">Box Photo</label>
+          <input type="file" id="photo" name="photo" accept="image/*" class="photo-upload">
+          <div class="photo-preview" id="photoPreview">
+            <span class="preview-text">📷 Click to upload box image</span>
+          </div>
+        </div>
+        <button type="submit" class="add-box-btn">Add Box</button>
+      </form>
+    </div>
+    <div class="join-club">
+      <h2>Join the <span>Surprise Club</span></h2>
+      <p>Get exclusive access to limited boxes and special member discounts.</p>
+      <div class="subscribe-form">
+        <input type="email" id="emailInput" placeholder="Enter your email..." />
+        <button type="button" id="subscribeBtn">Subscribe</button>
+      </div>
+      <p class="msg" id="messageArea"></p>
+    </div>
+  </main>
+  <%- include('partials/footer') %>
+  <script src="/js/boxes.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "name": "Adventure Box",
+    "price": 89,
+    "discount": 26,
+    "desc": "Premium outdoor gear for serious adventure.",
+    "features": ["Waterproof items", "Professional grade", "Compact design"]
+  },
+  {
+    "id": 2,
+    "name": "Adventure Mini Box",
+    "price": 45,
+    "discount": 26,
+    "desc": "Perfect introduction to outdoor adventure.",
+    "features": ["Durable accessories", "Travel-friendly", "Compact kit"]
+  },
+  {
+    "id": 3,
+    "name": "Geek Tech Box",
+    "price": 75,
+    "discount": 26,
+    "desc": "Latest gadgets and tech accessories.",
+    "features": ["Smart gadgets", "Exclusive tools", "Cool packaging"]
+  },
+  {
+    "id": 4,
+    "name": "Retro Geek Box",
+    "price": 55,
+    "discount": 26,
+    "desc": "Nostalgic tech and retro gaming goodies.",
+    "features": ["Retro games", "Collectibles", "USB classics"]
+  },
+  {
+    "id": 5,
+    "name": "Chill Spa Box",
+    "price": 65,
+    "discount": 24,
+    "desc": "Ultimate relaxation and self-care package.",
+    "features": ["Natural ingredients", "Aromatherapy", "Calming items"]
+  },
+  {
+    "id": 6,
+    "name": "Chill Cozy Box",
+    "price": 40,
+    "discount": 27,
+    "desc": "Comfort items to feel cozy.",
+    "features": ["Soft blanket", "Scented candles", "Tea set"]
+  },
+  {
+    "id": 7,
+    "name": "Creative Artist Box",
+    "price": 70,
+    "discount": 26,
+    "desc": "Art supplies and creative inspiration.",
+    "features": ["Paint set", "Brush kit", "Canvas board"]
+  },
+  {
+    "id": 8,
+    "name": "Bookworm Box",
+    "price": "$50",
+    "discount": "29% OFF",
+    "desc": "For those who live in stories and words.",
+    "features": ["2 surprise books", "Bookmarks", "Snacks for reading"]
+  }
+]

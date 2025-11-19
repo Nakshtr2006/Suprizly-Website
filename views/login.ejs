@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Suprizly</title>
+  <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+  <%- include('partials/header') %>
+  <main>
+    <div class="login-container">
+      <h1>Login / Sign Up</h1>
+      <form class="login-form">
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="text" name="firstName" placeholder="First Name" pattern="[A-Za-z\s]+" title="Only letters and spaces allowed" required>
+        <input type="text" name="lastName" placeholder="Last Name" pattern="[A-Za-z\s]+" title="Only letters and spaces allowed" required>
+        <input type="tel" name="phone" placeholder="Phone Number" pattern="[0-9]{10}" maxlength="10" title="Please enter exactly 10 digits" required>
+        <input type="text" name="country" placeholder="Country" required>
+        <input type="text" name="pinCode" placeholder="Pin Code" pattern="[0-9]{4,10}" maxlength="10" title="Only numbers allowed" required>
+        <textarea name="address" placeholder="Address" required></textarea>
+        <div class="options">
+          <a href="#">Forgot Password?</a>
+        </div>
+        <div class="buttons">
+          <button type="submit" class="signin">Sign In</button>
+          <button type="button" class="signup">Sign Up</button>
+        </div>
+      </form>
+    </div>
+    <div class="join-club">
+      <h2>Join the <span>Surprise Club</span></h2>
+      <p>Get exclusive access to limited boxes and special member discounts.</p>
+      <div class="subscribe-form">
+        <input type="email" id="emailInput" placeholder="Enter your email..." />
+        <button type="button" id="subscribeBtn">Subscribe</button>
+      </div>
+      <p class="msg" id="messageArea"></p>
+    </div>
+  </main>
+  <%- include('partials/footer') %>
+  <script src="/js/login.js"></script>
+</body>
+</html>

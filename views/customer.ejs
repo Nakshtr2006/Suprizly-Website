@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Stories - Suprizly</title>
+  <link rel="stylesheet" href="/css/customer.css">
+</head>
+<body>
+  <%- include('partials/header') %>
+  <main>
+    <div class="customer">
+      <h1>Customer Stories</h1>
+      <p>Real experiences from our amazing Surprizly community. See how mystery boxes have brought joy and excitement to thousands of customers!</p>
+      <h3>#MySurprizly</h3>
+    </div>
+    <div class="stats">
+      <div class="happy">
+        <h3>10,000+</h3>
+        <h5>Happy Customers</h5>
+      </div>
+      <div class="deliverd">
+        <h3>25,000+</h3>
+        <h5>Boxes Delivered</h5>
+      </div>
+      <div class="rating">
+        <h3>4.9/5</h3>
+        <h5>Average Rating</h5>
+      </div>
+    </div>
+    <div class="reviews">
+      <div><h1>What Our Customers Say</h1></div>
+      <div class="customers">
+        <div class="cus_1">
+          <p>I've been ordering Adventure boxes for 6 months now, and each one surprises me! Last month's box had this amazing portable water filter that saved my camping trip when we ran out of clean water. The quality is always top-notch, and I love how they include items I never knew I needed but now can't live without. The personal touch really shows they remembered I mentioned loving eco-friendly products in my note!"</p>
+        </div>
+        <div class="cus_2">
+          <p>"Surprizly never disappoints! I’ve been collecting their boxes for almost a year now, and I still get excited opening them. My latest one came with a foldable keyboard and a sleek metal thermos—both lifesavers for someone who’s always working on the go. The variety is incredible, and I really appreciate how they balance useful gadgets with little lifestyle luxuries. It feels like each box is designed just for me."</p>
+        </div>
+        <div class="cus_3">
+          <p>"I’ve been subscribed to Surprizly for a while, and every box feels like a gift from a friend who knows me too well. Last month, I got a set of smart LED lights and a bamboo desk organizer—both instantly made my study space brighter and more productive. I love how each box mixes fun with practicality, and it’s clear they actually read my note about loving sustainable products. Feels so personal every time!"</p>
+        </div>
+      </div>
+    </div>
+    <div class="stories-list">
+      <% if (typeof stories !== 'undefined' && stories && stories.length) { %>
+        <% stories.forEach(story => { %>
+          <div class="story-card">
+            <h3><%= story.title %></h3>
+            <p><%= story.content %></p>
+            <p><em>By <%= story.author %></em></p>
+            <form method="POST" action="/stories/delete/<%= story._id %>">
+              <button type="submit">Delete</button>
+            </form>
+          </div>
+        <% }) %>
+      <% } else if (typeof stories !== 'undefined') { %>
+        <p>No stories found.</p>
+      <% } %>
+    </div>
+    <% if (typeof stories !== 'undefined') { %>
+    <h3>Add New Story</h3>
+    <form method="POST" action="/stories/add">
+      <input name="title" placeholder="Title" required>
+      <input name="author" placeholder="Author" required>
+      <textarea name="content" placeholder="Story" required></textarea>
+      <button type="submit">Add Story</button>
+    </form>
+    <% } %>
+    <div class="join-club">
+      <h2>Join the <span>Surprise Club</span></h2>
+      <p>Get exclusive access to limited boxes and special member discounts.</p>
+      <div class="subscribe-form">
+        <input type="email" id="emailInput" placeholder="Enter your email..." />
+        <button type="button" id="subscribeBtn">Subscribe</button>
+      </div>
+      <p class="msg" id="messageArea"></p>
+    </div>
+  </main>
+  <%- include('partials/footer') %>
+  <script src="/js/customer.js"></script>
+</body>
+</html>

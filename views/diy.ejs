@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DIY Box - Suprizly</title>
+  <link rel="stylesheet" href="/css/diy.css">
+</head>
+<body>
+  <%- include('partials/header') %>
+  <main>
+    <div class="diy-container">
+      <h1>Design Your Own Surprise Box</h1>
+      <div class="steps">
+        <button id="selectBtn" class="step-btn active">1. Select Items</button>
+        <button id="personalizeBtn" class="step-btn">2. Personalize</button>
+        <button id="previewBtn" class="step-btn">3. Preview</button>
+      </div>
+      <div id="stepContent" class="step-content"></div>
+      <div class="action-btn">
+        <button id="nextBtn">Next ➜</button>
+      </div>
+    </div>
+  </main>
+  <%- include('partials/footer') %>
+  <script src="/js/diy.js"></script>
+</body>
+</html>

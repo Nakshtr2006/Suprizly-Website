@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ - Suprizly</title>
+  <link rel="stylesheet" href="/css/Faq.css">
+</head>
+<body>
+  <%- include('partials/header') %>
+  <main>
+    <div class="FAQ">
+      <h1>Frequently Asked Questions</h1>
+      <p>Find quick answers to common questions about our mystery boxes and services.</p>
+    </div>
+    <div class="questions">
+      <div class="ques1">
+        <h2>How do mystry box work?</h2>
+        <p>Each mystery box contains 3-5 carefully curated items based on your chosen theme. We select products that offer great value and intriduyce you to new brands and experiences.</p>
+      </div>
+      <div class="ques2">
+        <h2>Can I return items I don't like?</h2>
+        <p>While mystery boxes are final sale, we offer a satisfaction guarantee. If you're not happy with your box, contact us within 7 days and we'll make it right.</p>
+      </div>
+      <div class="ques3">
+        <h2>How often can I order boxes?</h2>
+        <p>You can order as frequently as you'd like! We also offer subscription options for monthly deliveries at a discounted rate.</p>
+      </div>
+      <div class="ques4">
+        <h2>Do you ship internationally?</h2>
+        <p>Currently, we ship to the US, Canada, and select European countries. We're working on expanding to more regions soon!</p>
+      </div>
+    </div>
+    <div class="join-club">
+      <h2>Join the <span>Surprise Club</span></h2>
+      <p>Get exclusive access to limited boxes and special member discounts.</p>
+      <div class="subscribe-form">
+        <input type="email" id="emailInput" placeholder="Enter your email..." />
+        <button type="button" id="subscribeBtn">Subscribe</button>
+      </div>
+      <p class="msg" id="messageArea"></p>
+    </div>
+  </main>
+  <%- include('partials/footer') %>
+  <script src="/js/Faq.js"></script>
+</body>
+</html>

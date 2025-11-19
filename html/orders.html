@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Orders - Surprizly</title>
+  <link rel="stylesheet" href="\css\orders.css">
+  <link href="https://fonts.googleapis.com/css?family=Podkova&display=swap" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Jersey+10' rel='stylesheet'>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo"><p>Surprizly</p></div>
+      <ul class="navlist">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="boxes.html">Boxes</a></li>
+        <li><a href="diy.html">Design Box</a></li>
+        <li><a href="customer.html">Stories</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="Faq.html">FAQ</a></li>
+      </ul>
+      <button class="unbox-btn"><a href="orders.html">Your Orders</a></button>
+    </nav>
+  </header>
+
+  <main>
+    <div class="orders">
+      <h1>Your Orders</h1>
+      <p>Order your selected Surprizly mystery box.</p>
+    </div>
+
+    <div class="items">
+
+      <div class="card" data-price="89">
+        <img src="https://thumbs.dreamstime.com/z/mountain-summit-adventure-thin-line-icon-symbol-design-mountain-summit-adventure-thin-line-icon-symbol-vector-illustration-graphic-111234516.jpg?ct=jpeg" alt="Adventure Box">
+        <div class="details">
+          <h3>Adventure Box</h3>
+          <p>A premium outdoor gear for serious adventurers.</p>
+          <h6>Waterproof items; Professional grade</h6>
+          <h4>$89.00 <span class="old">$180.00</span> | ⭐ 4.9 (228)</h4>
+          <div class="actions">
+            <input type="number" min="0" placeholder="Quantity">
+            <button class="save">Save</button>
+            <button class="delete">Delete</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-price="40">
+        <img src="https://static.vecteezy.com/system/resources/previews/004/572/818/non_2x/ice-cream-line-icon-vector.jpg" alt="Chill Cozy">
+        <div class="details">
+          <h3>Chill Cozy</h3>
+          <p>Comfort items for you to chill.</p>
+          <h6>Seasonal items; Comfort items</h6>
+          <h4>$40.00 <span class="old">$55.00</span> | ⭐ 4.5 (198)</h4>
+          <div class="actions">
+            <input type="number" min="0" placeholder="Quantity">
+            <button class="save">Save</button>
+            <button class="delete">Delete</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-price="75">
+        <img src="https://media.istockphoto.com/id/1329663428/vector/human-brain-icon-in-line-style.jpg?s=612x612&w=0&k=20&c=Y5hmS1CR1WqPp569KLCrsQK0RJeUY0MnftK5hlru13A=" alt="Geek Tech">
+        <div class="details">
+          <h3>Geek Tech</h3>
+          <p>Tech gadgets and geeky collectibles / accessories.</p>
+          <h6>Latest gadgets; Cool accessories</h6>
+          <h4>$75.00 <span class="old">$80.00</span> | ⭐ 4.6 (238)</h4>
+          <div class="actions">
+            <input type="number" min="0" placeholder="Quantity">
+            <button class="save">Save</button>
+            <button class="delete">Delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="total-box">
+      <div class="total-item">
+        <h3>Items: <span id="total-items">0</span></h3>
+      </div>
+      <div class="total-price">
+        <h2>Order Total: $<span id="total-price">0.00</span></h2>
+      </div>
+    </div>
+
+    <div class="join-club">
+  <h2>Join the <span>Surprise Club</span></h2>
+  <p>Get exclusive access to limited boxes and special member discounts.</p>
+  <div class="subscribe-form">
+    <input type="email" id="emailInput" placeholder="Enter your email..." />
+    <button type="button" id="subscribeBtn">Subscribe</button>
+  </div>
+  <p class="msg" id="messageArea"></p>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li>Browse Boxes</li>
+          <li>Design Your Own</li>
+          <li>Customer Stories</li>
+          <li>Track Order</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li>Contact Us</li>
+          <li>FAQ</li>
+          <li>Shipping Info</li>
+          <li>Returns</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <p>#MySuprizlyMoment</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Surprizly. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ✅ Link JS file here -->
+  <script src="\js\orders.js"></script>
+</body>
+</html>
